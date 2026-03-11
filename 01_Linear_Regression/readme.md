@@ -1,26 +1,26 @@
 # Simple Linear Regression Implementation
 
-This project implements the *Simple Linear Regression* algorithm to model the relationship between a single independent variable and a dependent variable.
+This project implements a *Simple Linear Regression* model to learn the direct relationship between input features ($X$) and target values ($y$).
 
 ## 🛠️ Tech Stack
 * *Python*
-* *Scikit-Learn* (for model training)
-* *Pandas & NumPy* (for data manipulation)
-* *Matplotlib* (for data visualization)
+* *Scikit-Learn*
+* *NumPy*
 
 ## 📂 Project Overview
-The goal of this project is to understand the fundamental concept of fitting a straight line to a set of data points to predict future values.
+This script demonstrates the basic workflow of a Scikit-Learn model:
+1. *Data Preparation:* Creating a simple dataset where the relationship is $y = 2x$.
+2. *Model Training:* Fitting a LinearRegression model to the data.
+3. *Prediction:* Using the trained model to predict the output for a new input ($X = 5$).
 
 ## 🚀 How to Run
-1. Install the required dependencies:
-   pip install pandas scikit-learn matplotlib
-2. Run the main script:
+1. Ensure you have the required libraries installed:
+   pip install scikit-learn numpy
+2. Run the script:
    python linear_regression.py
 
-## 📊 Key Learnings
-* Understanding the regression line equation: $y = mx + c$
-* Splitting data into training and testing sets.
-* Evaluating model performance using basic metrics.
+## 📊 Logic Explained
+The model learns that for every unit increase in $X$, $y$ increases by a factor of 2. When we input $X=5$, the model predicts:
+$$y = 2(5) = 10$$
 
----
-Refer to the source code for detailed implementation and comments.
+[attachment_0](attachment)
